@@ -22,7 +22,6 @@ class MainViewModel(private val apiInterface: ApiInterface) : ViewModel() {
     fun getRepos(key: String) {
         CoroutineScope(Dispatchers.Default).launch {
             try {
-                Log.d("ppp", apiInterface.provideGitHubApi().getRepository(key).toString())
                 _repositoryLiveData.postValue(apiInterface.provideGitHubApi().getRepository(key))
 
             } catch (e: Exception) {
