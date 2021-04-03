@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GitHubRestApi</string>
+    <string name="search_repo_text_hint">Type repo name...</string>
+    <string name="main_screen_info">Search for GitHub repos...</string>
 </resources>

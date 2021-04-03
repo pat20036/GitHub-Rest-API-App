@@ -8,7 +8,7 @@ import org.koin.core.context.startKoin
 class StartApp: Application() {
     override fun onCreate() {
         super.onCreate()
-
+initKoin()
 
     }
 
